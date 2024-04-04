@@ -1,4 +1,4 @@
-# 2048-project-2
+# Checkers project 2 
 The group members that form up this team are Andre Navarro and Rodrigo Garcia
 We will Start of by investigating the game deeper 
 After a thorough investigation we will go to python a see how we could start 
