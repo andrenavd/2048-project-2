@@ -17,18 +17,18 @@ class CheckersGame:
             print(" ".join(row))
 
     def is_valid_move(self, start, end):
-        # Implement logic to check if the move is valid
+     
         pass
 
     def make_move(self, start, end):
-        # Implement logic to make the move
+       
         pass
 
     def switch_player(self):
         self.current_player = 'O' if self.current_player == 'X' else 'X'
 
     def is_winner(self):
-        # Implement logic to check if there's a winner
+       
         pass
 
     def play(self):
