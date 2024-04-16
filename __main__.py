@@ -1,6 +1,6 @@
 class CheckersGame:
     def __init__(self):
-        checkers.board = [
+        self.board = [
             [' ', 'X', ' ', 'X', ' ', 'X', ' ', 'X'],
             ['X', ' ', 'X', ' ', 'X', ' ', 'X', ' '],
             [' ', 'X', ' ', 'X', ' ', 'X', ' ', 'X'],
