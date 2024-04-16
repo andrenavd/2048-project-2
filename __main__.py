@@ -1,4 +1,5 @@
-print the board, show pieces
+print the board
+print pieces and their colors 
 def _(new_board):
     # Defining the board 
     checkers.board = [
@@ -11,7 +12,8 @@ def _(new_board):
         ['_', 'O', '_', 'O', '_', 'O', '_', 'O'],
         ['O', '_', 'O', '_', 'O', '_', 'O', '_']
     ]
-
+print player 1 pieces
+print player 2 pieces 
 def print_board(checkers):
     for row in checkers.board:
         print(' '.join(row))
