@@ -1,19 +1,8 @@
-class CheckersGame:
-    def __init__(self):
-        self.board = [
-            [' ', 'X', ' ', 'X', ' ', 'X', ' ', 'X'],
-            ['X', ' ', 'X', ' ', 'X', ' ', 'X', ' '],
-            [' ', 'X', ' ', 'X', ' ', 'X', ' ', 'X'],
-            [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
-            [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
-            ['O', ' ', 'O', ' ', 'O', ' ', 'O', ' '],
-            [' ', 'O', ' ', 'O', ' ', 'O', ' ', 'O'],
-            ['O', ' ', 'O', ' ', 'O', ' ', 'O', ' '],
-        ]
-        self.current_player = 'X'
+from board import create_new_board, print_board
+from actions import place
 
-    def print_board(self):
-        for row in self.board:
-            print(" ".join(row))
+with open('README.md', 'r') as f:
+    print(f.read())
+
 
    
