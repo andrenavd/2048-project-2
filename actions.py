@@ -1,30 +1,24 @@
- # PLayers
-checkers.player1 = 'X'  
-checkers.player2 = 'O'  
-checkers.current_player = checkers.player1  
+player1 = 'X'  
+player2 = 'O'  
+current_player = player1  
 
-def print_board(checkers):
-    for row in checkers.board:
+def print_board(board):
+    for row in board:
         print(' '.join(row))
 
-def is_valid_move(checkers, start, end):
-    # See if that move can be done 
+def is_valid_move(start, end):
     pass
 
-def make_move(checkers, start, end):
-    # How to get the movement made 
+def make_move(start, end):
     pass
 
-def switch_player(checkers):
-    # Switch Player
-    if checkers.current_player == checkers.player1:
-        checkers.current_player = checkers.player2
+def switch_player():
+    global current_player
+    if current_player == player1:
+        current_player = player2
     else:
-        checkers.current_player = checkers.player1
+        current_player = player1
 
-def is_winner(checkers):
-       
-        
-
-    game = CheckersGame()
-game.print_board()
+def is_winner():
+    pass
+ 
