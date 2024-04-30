@@ -1,15 +1,15 @@
-player1 = 'X'  
-player2 = 'O'  
-current_player = player1  
+player1 = 'X'
+player2 = 'O'
+current_player = player1
 
 def print_board(board):
     for row in board:
         print(' '.join(row))
 
-def is_valid_move(start, end):
+def is_valid_move(board, start, end):
     pass
 
-def make_move(start, end):
+def make_move(board, start, end, player):
     pass
 
 def switch_player():
@@ -19,6 +19,6 @@ def switch_player():
     else:
         current_player = player1
 
-def is_winner():
+def is_winner(board, player):
     pass
- 
+
