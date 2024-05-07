@@ -1,13 +1,23 @@
-while not is_winner(board, current_player):
-    print_board(board)
+def test_is_valid_move(self):
+        board = new_board()
+        start = (2, 1)
+        end = (3, 2)
+        self.assertTrue(is_valid_move(board, start, end, 'X'))
+ 
     
-    start = input(f"Player {current_player}, enter start position: ").upper()
-    end = input(f"Player {current_player}, enter end position: ").upper()
-    
-    if is_valid_move(board, start, end):
-        make_move(board, start, end, current_player)
-        current_player = switch_player(current_player, player1, player2)
+def test_make_move(self):
+        board = new_board()
+        start = (2, 1)
+        end = (3, 2)
+        make_move(board, start, end, 'X')
+        self.assertEqual(board[2][1], '_')
+        self.assertEqual(board[3][2], 'X')
 
-          if len(position) == 2 and position[0] in 'ABCDEFGH' and position[1] in '12345678':
+def test_switch_player(self):
+        player1 = 'X'
+        player2 = 'O'
+        self.assertEqual(switch_player(player1), player2)
+        self.assertEqual(switch_player(player2), player1)
+
            
    
